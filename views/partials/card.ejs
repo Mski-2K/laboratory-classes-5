@@ -1,0 +1,12 @@
+<div class="card">
+  <img
+    class="card__image"
+    src="https://unctad.org/sites/default/files/inline-images/ccpb_workinggroup_productsafety_800x450.jpg"
+    alt="<%= product.name %>"
+  />
+  <h3 class="card__title"><%= product.name %></h3>
+  <p class="card__description"><%= product.description %></p>
+  <p class="card__price">$<%= product.price %></p>
+  <a href="/products/<%= product.name %>">Details</a>
+  <button onclick="deleteProduct('<%= product.name %>')">Delete</button>
+</div> 
